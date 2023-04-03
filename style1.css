@@ -6,10 +6,12 @@
 }
 body{
     background-image: url(bmw.jpg);
-    background-attachment: fixed ;
      background-size: 100%; 
     margin: 0px;
     padding: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
    
    
 
@@ -17,7 +19,7 @@ body{
 .container{
     background: rgba(255, 255, 255, 0.01);
     box-shadow: 0 5px 15px rgb(0, 0, 0);
-   margin: 6vw;
+   margin: 4%;
 }
 .myself, .hobbies {
     display: flex;
@@ -34,16 +36,16 @@ body{
 h1{
     text-align: center;
     padding: 3px 3px;
-    font-size: 250%;
+    font-size: 15px;
     margin-top: 5vh ;
 }
 h2{
     margin: 15vh;
-    font-size: 2.9rem;
+    font-size: 20px;
     
 }
 span{
-    font-size: 1.5rem;
+    font-size: 15px;
     margin-left: 20px;
     color: white;
     margin-top: -8%;
@@ -52,14 +54,15 @@ span{
 
 h4{
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 25px;
     margin: 9vh;
 }
 
 h5{
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 15px;
     margin: 6vh;
+    color: white;
 }
 .links{
     display: flex;
@@ -75,44 +78,75 @@ h5{
     height: 100px;
      width: 100px;
 }
-
-.imgs img{
+.imgs {
     margin: 2vw;
-    height:300px; width:300px;
-    
-    
+   
+     padding: 10px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width:1048px){
+.imgs img{
+    height:50vh;
+    padding: 2%;
+}
+
+
+
+@media screen and (max-width:968px){
     a img, .myself img,.hobbies img{
         width:50%;height: 50%;
     }
     
-     .images img{
+     .imgs {
        
-        padding: 10px;
-        width:50%;height: 50%;
+       
+       
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .imgs img{
+        height: 35vh;
+        
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:672px){
     a img, .myself img,.hobbies img{
         width:50%;height: 50%;
     }
     
-     .images img{
-        height: 80%;
-        width: 80%;
-       
-        padding: 10px;
+     .imgs{
+      
+        margin: 7%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     
+    }
+    .imgs img{
+       width: 45vw;
+       height:auto ;
     }
     body{
         margin-left: 10px;
     }
 }
+@media screen and ( max-width:370px){
+    .imgs img{
+
+    height: 25vh;
+    }
+
+}
+@media screen and ( max-width:262px){
+    .imgs img{
+
+    height: 20vh;
+    }
+
+}
+    
